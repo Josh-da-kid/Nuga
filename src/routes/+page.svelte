@@ -12,6 +12,7 @@
 	import Support from '$lib/components/Support.svelte';
 	import Network from '$lib/components/Network.svelte';
 	import VarsityGames from '$lib/components/VarsityGames.svelte';
+	import Newsletter from '$lib/components/Newsletter.svelte';
 </script>
 
 <main>
@@ -28,6 +29,7 @@
 	<Support />
 	<Network />
 	<VarsityGames />
+	<Newsletter />
 </main>
 
 <style>
