@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600" fill="none">
+  <defs>
+    <linearGradient id="femaleGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3B82F6;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#1E40AF;stop-opacity:0.6" />
+    </linearGradient>
+  </defs>
+  <!-- Background circle -->
+  <circle cx="200" cy="300" r="180" fill="url(#femaleGradient)" opacity="0.3"/>
+  
+  <!-- Female athlete silhouette - running pose -->
+  <g transform="translate(100, 80)">
+    <!-- Head -->
+    <circle cx="100" cy="50" r="35" fill="#1E40AF"/>
+    
+    <!-- Hair -->
+    <ellipse cx="100" cy="35" rx="30" ry="20" fill="#1E3A8A"/>
+    <ellipse cx="130" cy="55" rx="15" ry="35" fill="#1E3A8A"/>
+    
+    <!-- Neck -->
+    <rect x="90" y="80" width="20" height="20" fill="#FCD34D"/>
+    
+    <!-- Body/Torso -->
+    <path d="M70 100 L130 100 L125 180 L75 180 Z" fill="#FCD34D"/>
+    
+    <!-- Left Arm (raised) -->
+    <path d="M70 110 L40 60 L55 55 L85 100" fill="#FCD34D"/>
+    <circle cx="40" cy="55" r="12" fill="#FCD34D"/>
+    
+    <!-- Right Arm (bent) -->
+    <path d="M130 110 L160 80 L155 95 L125 115" fill="#FCD34D"/>
+    <circle cx="160" cy="80" r="12" fill="#FCD34D"/>
+    
+    <!-- Sports top -->
+    <path d="M75 100 L125 100 L120 140 L80 140 Z" fill="#EF4444"/>
+    <path d="M85 100 L75 115 L85 115 Z" fill="#EF4444"/>
+    <path d="M115 100 L125 115 L115 115 Z" fill="#EF4444"/>
+    
+    <!-- Shorts -->
+    <path d="M75 180 L125 180 L130 220 L100 210 L70 220 Z" fill="#1E40AF"/>
+    
+    <!-- Left Leg (forward) -->
+    <path d="M85 210 L60 280 L75 280 L95 220" fill="#FCD34D"/>
+    <path d="M60 280 L50 380 L75 380 L80 280" fill="#EF4444"/>
+    <ellipse cx="62" cy="385" rx="18" ry="8" fill="#FFFFFF"/>
+    
+    <!-- Right Leg (back) -->
+    <path d="M115 210 L140 270 L125 270 L105 220" fill="#FCD34D"/>
+    <path d="M140 270 L145 360 L120 360 L130 270" fill="#EF4444"/>
+    <ellipse cx="132" cy="365" rx="18" ry="8" fill="#FFFFFF"/>
+    
+    <!-- Face features -->
+    <circle cx="90" cy="45" r="3" fill="#FFFFFF"/>
+    <circle cx="110" cy="45" r="3" fill="#FFFFFF"/>
+    <path d="M95 60 Q100 65 105 60" stroke="#1E3A8A" stroke-width="2" fill="none"/>
+  </g>
+  
+  <!-- Motion lines -->
+  <g stroke="#3B82F6" stroke-width="3" opacity="0.5">
+    <line x1="50" y1="150" x2="20" y2="120"/>
+    <line x1="45" y1="180" x2="10" y2="170"/>
+    <line x1="50" y1="210" x2="15" y2="210"/>
+  </g>
+</svg>
