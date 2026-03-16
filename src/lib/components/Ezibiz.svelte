@@ -77,7 +77,9 @@
 <section
 	class="bg-gradient-to-r text-white grid grid-cols-1 md:grid-cols-2 gap-8 from-amber-900 to-blue-950 p-4 rounded-3xl max-w-7xl justify-center items-center mx-auto"
 >
-	<div class="p-4 md:p-8 lg:p-12">
+	<div
+		class="p-4 md:p-8 lg:p-12 text-center sm:text-left items-center sm:items-start justify-center sm:justify-start flex flex-col"
+	>
 		<h1 class="flex flex-col text-4xl sm:text-5xl md:text-6xl lg:text-[150px] font-bold text-white">
 			EziBiz <span
 				><img
