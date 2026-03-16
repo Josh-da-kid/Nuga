@@ -13,6 +13,7 @@
 	import Network from '$lib/components/Network.svelte';
 	import VarsityGames from '$lib/components/VarsityGames.svelte';
 	import Newsletter from '$lib/components/Newsletter.svelte';
+	import Footer from '$lib/components/Footer.svelte';
 </script>
 
 <main>
@@ -30,6 +31,7 @@
 	<Network />
 	<VarsityGames />
 	<Newsletter />
+	<Footer />
 </main>
 
 <style>
