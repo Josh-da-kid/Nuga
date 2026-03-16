@@ -81,7 +81,7 @@
 			<img src="/brush.svg" class="-mt-2 md:-mt-4 w-20 sm:w-28 md:w-32" alt="" />
 		</div>
 		<h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-[120px] font-bold text-white leading-tight">
-			THE MOVE MENT
+			THE MOVE<br class="hidden md:block" />MENT
 		</h1>
 		<p class="text-sm md:text-lg lg:text-xl mt-4">Support The Paradise Games</p>
 	</div>

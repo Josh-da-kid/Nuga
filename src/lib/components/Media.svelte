@@ -140,7 +140,7 @@
 										class="w-full h-48 sm:h-56 object-cover group-hover:scale-105 transition-transform duration-500"
 									/>
 									<span
-										class="absolute top-4 left-4 bg-blue-600/10 text-blue-500 text-xs sm:text-sm font-semibold px-3 py-1 rounded-full"
+										class="absolute top-4 left-4 bg-blue-600/80 text-white text-xs sm:text-sm font-semibold px-3 py-1 rounded-full"
 									>
 										{item.tag}
 									</span>

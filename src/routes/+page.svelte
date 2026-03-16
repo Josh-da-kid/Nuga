@@ -10,6 +10,8 @@
 	import Join from '$lib/components/Join.svelte';
 	import Ezibiz from '$lib/components/Ezibiz.svelte';
 	import Support from '$lib/components/Support.svelte';
+	import Network from '$lib/components/Network.svelte';
+	import VarsityGames from '$lib/components/VarsityGames.svelte';
 </script>
 
 <main>
@@ -24,6 +26,8 @@
 	<Join />
 	<Ezibiz />
 	<Support />
+	<Network />
+	<VarsityGames />
 </main>
 
 <style>

@@ -101,7 +101,7 @@
 	{/if}
 
 	<div
-		class="items-center justify-center hidden md:flex bg-gray-200/20 backdrop-blur-md rounded-full px-4 py-2 md:px-8 shadow-lg"
+		class="items-center justify-center hidden md:flex bg-gray-200/20 backdrop-blur-md rounded-full px-4 py-2 md:px-2 shadow-lg"
 	>
 		<button
 			class="hidden md:block bg-[#FFAD33] text-black px-6 lg:px-8 py-2 lg:py-3 rounded-full font-semibold text-base lg:text-lg hover:scale-105 transition-transform shadow-md"
