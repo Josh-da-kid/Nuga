@@ -277,12 +277,12 @@
 			</h2>
 		</div>
 
-		<div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:px-12 items-stretch">
-			<!-- Left: YouTube Video Frame - styled like mediaItems -->
-			<div class=" mx-auto w-full flex flex-col">
-				<div class="bg-white/30 p-3 rounded-xl">
+		<div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:px-12">
+			<!-- Left: YouTube Video Frame -->
+			<div class="flex flex-col w-full">
+				<div class="bg-white/30 p-3 rounded-xl h-[400px] sm:h-[450px] lg:h-[500px]">
 					<article
-						class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 group flex-1"
+						class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 group h-full"
 					>
 						<div class="relative overflow-hidden">
 							<div class="aspect-video">
@@ -301,18 +301,18 @@
 								Featured
 							</span>
 						</div>
-						<div class="p-4 sm:p-5">
-							<h2 class="text-base sm:text-lg font-bold text-gray-900 mt-2">
+						<div class="p-3 sm:p-4 lg:p-5">
+							<h2 class="text-sm sm:text-base lg:text-lg font-bold text-gray-900 mt-2">
 								NUGA Games 2026 - Official Trailer
 							</h2>
-							<p class="text-gray-600 mt-2 text-sm">
+							<p class="text-gray-600 mt-2 text-xs sm:text-sm">
 								Watch the official trailer for the upcoming NUGA Games
 							</p>
 						</div>
 					</article>
 				</div>
-				<div class="block md:flex text-center items-center justify-between mt-4 lg:mt-8">
-					<p class="text-white text-lg sm:text-xl">
+				<div class="block md:flex text-center items-center justify-between mt-4 lg:mt-8 px-2">
+					<p class="text-white text-base sm:text-lg lg:text-xl">
 						Be the first to know when we upload a new video
 					</p>
 					<svg
@@ -333,24 +333,24 @@
 				</div>
 			</div>
 
-			<!-- Right: YouTube Preview Videos - styled like mediaItems with flex-row text -->
-			<div class="media-font mx-auto w-full max-w-xl flex flex-col">
-				<div class="p-3 bg-white/30 rounded-xl">
-					<div class="grid grid-cols-1 gap-4 bg-white p-3 rounded-xl flex-1">
+			<!-- Right: YouTube Preview Videos -->
+			<div class="flex flex-col w-full max-w-none lg:max-w-xl">
+				<div class="p-3 bg-white/30 rounded-xl h-[400px] sm:h-[450px] lg:h-[500px]">
+					<div class="grid grid-cols-1 gap-2 bg-white p-3 rounded-xl h-full">
 						{#each videoPreviews as video}
 							<div
-								class="bg-white/30 p-3 rounded-xl cursor-pointer hover:bg-white/50 transition-colors group"
+								class="bg-white/30 p-2 sm:p-3 rounded-xl cursor-pointer hover:bg-white/50 transition-colors group"
 							>
 								<article
 									class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1"
 								>
 									<div class="flex flex-row">
 										<!-- Video thumbnail -->
-										<div class="relative overflow-hidden w-40 sm:w-48 flex-shrink-0">
+										<div class="relative overflow-hidden w-28 sm:w-36 lg:w-40 flex-shrink-0">
 											<img
 												src={video.thumbnail}
 												alt={video.title}
-												class="w-full h-24 sm:h-28 object-cover group-hover:scale-105 transition-transform duration-500"
+												class="w-full h-20 sm:h-24 lg:h-28 object-cover group-hover:scale-105 transition-transform duration-500"
 											/>
 											<span
 												class="absolute bottom-1 right-1 bg-black/80 text-white text-xs px-1 py-0.5 rounded"
@@ -360,9 +360,11 @@
 											<div
 												class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-black/40"
 											>
-												<div class="bg-red-600 w-10 h-8 rounded flex items-center justify-center">
+												<div
+													class="bg-red-600 w-8 h-6 sm:w-10 sm:h-8 rounded flex items-center justify-center"
+												>
 													<svg
-														class="w-5 h-4 text-white ml-0.5"
+														class="w-4 h-3 sm:w-5 sm:h-4 text-white ml-0.5"
 														fill="currentColor"
 														viewBox="0 0 24 24"
 													>
@@ -372,10 +374,14 @@
 											</div>
 										</div>
 										<!-- Text content side by side -->
-										<div class="p-3 sm:p-4 flex flex-col justify-center">
-											<p class="text-gray-500 text-xs">{video.date || '12/Feb/2026'}</p>
-											<h4 class="text-sm font-bold text-gray-900 line-clamp-2">{video.title}</h4>
-											<p class="text-gray-600 mt-1 text-xs line-clamp-2">
+										<div class="p-2 sm:p-3 lg:p-4 flex flex-col justify-center">
+											<p class="text-gray-500 text-xs sm:text-sm">{video.date || '12/Feb/2026'}</p>
+											<h4
+												class="text-xs sm:text-sm lg:text-sm font-bold text-gray-900 line-clamp-2"
+											>
+												{video.title}
+											</h4>
+											<p class="text-gray-600 mt-0.5 text-xs sm:text-sm line-clamp-2">
 												{video.description ||
 													'Watch the latest highlights and updates from NUGA Games 2026'}
 											</p>
@@ -386,13 +392,13 @@
 						{/each}
 					</div>
 				</div>
-				<div class="flex flex-col sm:flex-row gap-4 mt-4 items-center justify-between">
+				<div class="flex flex-col sm:flex-row gap-3 sm:gap-4 mt-4 items-center justify-center px-2">
 					<!-- youtube button -->
 					<div
-						class="items-center justify-center w-fit bg-gray-200/20 backdrop-blur-md rounded-full px-4 py-2 shadow-lg"
+						class="items-center justify-center w-fit bg-gray-200/20 backdrop-blur-md rounded-full px-3 py-2 shadow-lg"
 					>
 						<button
-							class="flex items-center gap-2 bg-yellow-600 text-black px-6 lg:px-8 py-3 lg:py-5 rounded-full font-semibold text-base lg:text-lg hover:scale-105 transition-transform shadow-md"
+							class="flex items-center gap-2 bg-yellow-600 text-black px-4 sm:px-6 lg:px-8 py-2 sm:py-3 lg:py-5 rounded-full font-semibold text-sm sm:text-base lg:text-lg hover:scale-105 transition-transform shadow-md"
 						>
 							Check Our Youtube
 						</button>
@@ -400,10 +406,10 @@
 
 					<!-- get involved button -->
 					<div
-						class="items-center justify-center w-fit bg-gray-200/20 backdrop-blur-md rounded-full px-4 py-2 shadow-lg"
+						class="items-center justify-center w-fit bg-gray-200/20 backdrop-blur-md rounded-full px-3 py-2 shadow-lg"
 					>
 						<button
-							class="flex items-center gap-2 bg-gradient-to-b from-gray-200 to-green-200 text-black px-6 lg:px-12 py-3 lg:py-5 rounded-full font-semibold text-base lg:text-lg hover:scale-105 transition-transform shadow-md"
+							class="flex items-center gap-2 bg-gradient-to-b from-gray-200 to-green-200 text-black px-4 sm:px-6 lg:px-8 py-2 sm:py-3 lg:py-5 rounded-full font-semibold text-sm sm:text-base lg:text-lg hover:scale-105 transition-transform shadow-md"
 						>
 							Get Involved
 						</button>
