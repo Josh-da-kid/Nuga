@@ -33,7 +33,7 @@
 	<!-- Main Content -->
 	<div class="z-10 flex flex-col items-center pt-28 md:pt-48 pb-16 px-2 md:px-4">
 		<!-- Countdown Timer -->
-		<div class="bg-blue-400/40 px-3 sm:px-6 rounded-3xl py-3 sm:py-4 mb-6 sm:mb-8">
+		<div class="bg-blue-100/20 px-3 sm:px-6 rounded-3xl py-3 sm:py-4 mb-6 sm:mb-8">
 			<div class="flex gap-2 sm:gap-4 md:gap-6">
 				<div
 					class="bg-white rounded-lg md:rounded-xl px-2 sm:px-4 md:px-6 py-2 md:py-3 shadow-lg text-center min-w-[50px] sm:min-w-[70px] md:min-w-[90px]"
