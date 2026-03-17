@@ -25,7 +25,7 @@
 	<div
 		class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 mt-12 justify-center items-center mx-auto"
 	>
-		{#each buttons.slice(0, 3) as button}
+		{#each buttons as button}
 			<div
 				class="bg-blue-100/40 backdrop-blur-sm items-center mx-auto flex flex-col w-fit px-2 py-2 rounded-full"
 			>
@@ -36,7 +36,7 @@
 				</button>
 			</div>
 		{/each}
-		<div class="md:col-span-2 grid md:grid-cols-2 justify-center items-center mx-auto gap-6">
+		<!-- <div class="md:col-span-2 grid md:grid-cols-2 justify-center items-center mx-auto gap-6">
 			{#each buttons.slice(3) as button}
 				<div
 					class="bg-blue-100/40 backdrop-blur-sm items-center mx-auto flex flex-col w-fit px-2 py-2 rounded-full"
@@ -48,6 +48,6 @@
 					</button>
 				</div>
 			{/each}
-		</div>
+		</div> -->
 	</div>
 </section>

@@ -404,32 +404,30 @@
 						{/each}
 					</div>
 				</div>
-			</div>
-
-			<!-- Buttons - Full width on desktop -->
-			<div
-				class="lg:col-span-2 flex flex-col sm:flex-row gap-3 sm:gap-4 mt-4 items-center justify-center px-2"
-			>
-				<!-- youtube button -->
 				<div
-					class="items-center justify-center w-fit bg-gray-200/20 backdrop-blur-md rounded-full px-3 py-2 shadow-lg"
+					class="flex flex-col sm:flex-row gap-3 sm:gap-4 mt-4 items-center justify-between px-2"
 				>
-					<button
-						class="flex items-center gap-2 bg-yellow-600 text-black px-4 sm:px-6 lg:px-8 py-2 sm:py-3 lg:py-5 rounded-full font-semibold text-sm sm:text-base lg:text-lg hover:scale-105 transition-transform shadow-md"
+					<!-- youtube button -->
+					<div
+						class="items-center justify-center w-fit bg-gray-200/20 backdrop-blur-md rounded-full px-3 py-2 shadow-lg"
 					>
-						Check Our Youtube
-					</button>
-				</div>
+						<button
+							class="flex items-center gap-2 bg-yellow-600 text-black px-4 sm:px-6 lg:px-8 py-2 sm:py-3 lg:py-5 rounded-full font-semibold text-sm sm:text-base lg:text-lg hover:scale-105 transition-transform shadow-md"
+						>
+							Check Our Youtube
+						</button>
+					</div>
 
-				<!-- get involved button -->
-				<div
-					class="items-center justify-center w-fit bg-gray-200/20 backdrop-blur-md rounded-full px-3 py-2 shadow-lg"
-				>
-					<button
-						class="flex items-center gap-2 bg-gradient-to-b from-gray-200 to-green-200 text-black px-4 sm:px-6 lg:px-8 py-2 sm:py-3 lg:py-5 rounded-full font-semibold text-sm sm:text-base lg:text-lg hover:scale-105 transition-transform shadow-md"
+					<!-- get involved button -->
+					<div
+						class="items-center justify-center w-fit bg-gray-200/20 backdrop-blur-md rounded-full px-3 py-2 shadow-lg"
 					>
-						Get Involved
-					</button>
+						<button
+							class="flex items-center gap-2 bg-gradient-to-b from-gray-200 to-green-200 text-black px-4 sm:px-6 lg:px-8 py-2 sm:py-3 lg:py-5 rounded-full font-semibold text-sm sm:text-base lg:text-lg hover:scale-105 transition-transform shadow-md"
+						>
+							Get Involved
+						</button>
+					</div>
 				</div>
 			</div>
 		</div>
