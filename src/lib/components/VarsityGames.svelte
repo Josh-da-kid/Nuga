@@ -6,7 +6,7 @@
 		},
 		{
 			title: 'The Federation of African University Sports (FASU)',
-			image: 'federation2.svg'
+			image: 'federation3.svg'
 		},
 		{
 			title: 'Nigeria University Games Association (NUGA)',
@@ -25,7 +25,7 @@
 		<img src="/varsity.svg" alt="" />
 	</div>
 
-	<section class="grid md:grid-cols-2 mx-auto gap-24 mt-16 justify-between items-start">
+	<section class="grid md:grid-cols-2 mx-auto gap-24 mt-16 justify-between items-stretch">
 		<div>
 			<div class="text-start">
 				<h2 class="font-bold text-2xl md:text-4xl">Federations</h2>
@@ -49,8 +49,8 @@
 			</div>
 		</div>
 
-		<div class="h-auto">
-			<img src="/col.svg" alt="" />
+		<div class="h-full -mt-12">
+			<img src="/col.svg" alt="" class="h-full w-full object-cover" />
 		</div>
 	</section>
 </section>
