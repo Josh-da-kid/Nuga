@@ -109,7 +109,7 @@
 			class="absolute bottom-0 left-0 w-64 sm:w-80 lg:w-96 h-auto opacity-30 lg:opacity-50 pointer-events-none"
 			alt=""
 		/>
-		<div class="relative z-10 grid grid-cols-1 lg:grid-cols-3 gap-8">
+		<div class="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-4">
 			<!-- Latest Information - Only visible on mobile/tablet, hidden on desktop -->
 			<div class="lg:hidden flex flex-col justify-center">
 				<div class="text-center">
@@ -127,8 +127,8 @@
 			</div>
 
 			<!-- Media Items -->
-			<div class="lg:col-span-2 media-font">
-				<div class="grid grid-cols-1 sm:grid-cols-2 gap-y-36 gap-8 max-w-3xl pb-28">
+			<div class="lg:col-span-8 media-font">
+				<div class="grid grid-cols-1 sm:grid-cols-2 gap-y-36 gap-8 max-w-5xl pb-28">
 					{#each mediaItems as item}
 						<div
 							class="bg-white/20 min-h-[320px] p-3 rounded-xl relative max-w-[430px] flex items-end"
@@ -224,7 +224,7 @@
 			</div>
 
 			<!-- Latest Information - Only visible on desktop -->
-			<div class="hidden lg:flex lg:col-span-1 flex-col">
+			<div class="hidden lg:flex lg:col-span-4 flex-col">
 				<div class="text-left">
 					<p class="text-white text-lg sm:text-xl lg:text-xl font-medium mb-6">
 						Let's bring you up to speed!
@@ -286,10 +286,10 @@
 
 		<div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:px-12 items-stretch">
 			<!-- Left: YouTube Video Frame - styled like mediaItems -->
-			<div class=" mx-auto w-full flex flex-col">
+			<div class="mx-auto w-full flex flex-col">
 				<div class="bg-white/30 p-3 rounded-xl">
 					<article
-						class="bg-white rounded-xl overflow-hidden md:h-[600px] shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 group flex-1"
+						class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 group flex-1"
 					>
 						<div class="relative overflow-hidden">
 							<div class="aspect-video">
@@ -318,12 +318,14 @@
 						</div>
 					</article>
 				</div>
-				<div class="flex items-center justify-between mt-4 lg:mt-8">
-					<p class="text-white text-lg sm:text-xl">
+				<div
+					class="flex flex-col sm:flex-row gap-2 sm:gap-4 mt-4 lg:mt-8 items-center justify-between"
+				>
+					<p class="text-white text-sm sm:text-lg lg:text-xl text-center sm:text-left">
 						Be the first to know when we upload a new video
 					</p>
 					<svg
-						class="text-white w-8 h-8 flex-shrink-0"
+						class="text-white w-6 h-6 sm:w-8 sm:h-8 flex-shrink-0"
 						xmlns="http://www.w3.org/2000/svg"
 						width="24"
 						height="24"
@@ -343,7 +345,9 @@
 			<!-- Right: YouTube Preview Videos - styled like mediaItems with flex-row text -->
 			<div class="media-font mx-auto w-full max-w-xl flex flex-col">
 				<div class="p-3 bg-white/30 rounded-xl">
-					<div class="grid grid-cols-1 gap-4 md:h-[600px] bg-white p-3 rounded-xl flex-1">
+					<div
+						class="grid grid-cols-1 gap-4 bg-white p-3 rounded-xl flex-1 overflow-y-auto max-h-[500px] lg:max-h-none"
+					>
 						{#each videoPreviews as video}
 							<div
 								class="bg-white/30 p-3 rounded-xl cursor-pointer hover:bg-white/50 transition-colors group"
@@ -393,7 +397,9 @@
 						{/each}
 					</div>
 				</div>
-				<div class="flex flex-col sm:flex-row gap-4 mt-4 items-center justify-between">
+				<div
+					class="flex flex-col sm:flex-row gap-4 mt-4 items-center justify-center sm:justify-between"
+				>
 					<!-- youtube button -->
 					<div
 						class="items-center justify-center w-fit bg-gray-200/20 backdrop-blur-md rounded-full px-4 py-2 shadow-lg"
