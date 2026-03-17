@@ -3,28 +3,28 @@
 	const destinationImages = [
 		{
 			id: 1,
-			src: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=600&h=400&fit=crop',
-			alt: 'Image 1'
+			src: '/destination1.svg',
+			alt: 'CrossRiver Masquerade'
 		},
 		{
 			id: 2,
-			src: 'https://images.unsplash.com/photo-1494526585095-c41746248156?w=600&h=400&fit=crop',
-			alt: 'Image 2'
+			src: '/destination2.svg',
+			alt: 'CrossRiver Carnival'
 		},
 		{
 			id: 3,
-			src: 'https://images.unsplash.com/photo-1500534623283-312aade485b7?w=600&h=400&fit=crop',
-			alt: 'Image 3'
+			src: '/destination3.svg',
+			alt: 'Prince Bassey Otu, CrossRiver State Governor'
 		},
 		{
 			id: 4,
-			src: 'https://images.unsplash.com/photo-1491895200222-0fc4a4c35e18?w=600&h=400&fit=crop',
-			alt: 'Image 4'
+			src: '/destination4.svg',
+			alt: 'Obudu Cattle Ranch Gate'
 		},
 		{
 			id: 5,
-			src: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=600&h=400&fit=crop',
-			alt: 'Image 5'
+			src: '/destination5.svg',
+			alt: 'Football Pitch'
 		}
 	];
 </script>

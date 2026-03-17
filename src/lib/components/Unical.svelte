@@ -3,28 +3,28 @@
 	const unicalImages = [
 		{
 			id: 1,
-			src: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=600&h=400&fit=crop',
-			alt: 'Image 1'
+			src: '/unical01.svg',
+			alt: 'University Faculties'
 		},
 		{
 			id: 2,
-			src: 'https://images.unsplash.com/photo-1494526585095-c41746248156?w=600&h=400&fit=crop',
-			alt: 'Image 2'
+			src: '/unical2.svg',
+			alt: 'Unical Student award ceremony'
 		},
 		{
 			id: 3,
-			src: 'https://images.unsplash.com/photo-1500534623283-312aade485b7?w=600&h=400&fit=crop',
-			alt: 'Image 3'
+			src: '/unical3.svg',
+			alt: 'Unical HOD'
 		},
 		{
 			id: 4,
-			src: 'https://images.unsplash.com/photo-1491895200222-0fc4a4c35e18?w=600&h=400&fit=crop',
-			alt: 'Image 4'
+			src: '/unical4.svg',
+			alt: 'NUGA Associates'
 		},
 		{
 			id: 5,
-			src: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=600&h=400&fit=crop',
-			alt: 'Image 5'
+			src: '/unical5.svg',
+			alt: 'University Of Calabar'
 		}
 	];
 </script>
