@@ -78,18 +78,17 @@
 	class="bg-gradient-to-r text-white grid grid-cols-1 md:grid-cols-2 gap-8 mt-24 from-red-800 to-blue-950 p-4 rounded-3xl max-w-7xl justify-center items-center mx-auto"
 >
 	<div
-		class="p-4 md:p-8 lg:p-12 gap-5 text-center sm:text-left items-center sm:items-start justify-center sm:justify-start flex flex-col"
+		class="p-4 md:p-8 lg:p-12 gap-6 text-center sm:text-left items-center sm:items-start justify-center sm:justify-start flex flex-col"
 	>
 		<h1 class="flex flex-col text-4xl sm:text-5xl md:text-6xl font-medium text-white">
 			Subscribe to our Newsletter
 		</h1>
 
 		<div class="flex flex-col text-lg md:text-xl lg:text-2xl font-medium gap-2">
+			<p class="text-md md:text-lg lg:text-xl mt-2">Never miss a moment</p>
 			<p class="text-md md:text-lg lg:text-xl mt-2">
-				Never miss a moment <br /> From major announcements to behind-the-scenes highlights, we’ll keep
-				you informed.
+				From major announcements to behind-the-scenes highlights, we’ll keep you informed.
 			</p>
-			<p class="text-md md:text-lg lg:text-xl mt-2"></p>
 		</div>
 		<p class="text-md md:text-lg lg:text-xl">👉 Subscribe for Updates</p>
 	</div>
