@@ -2,7 +2,7 @@
 	class="relative w-full h-full flex flex-col gap-2 justify-center items-center rounded-2xl overflow-hidden py-24 text-center p-6"
 >
 	<h1 class="flex items-center font-bold text-2xl sm:text-3xl lg:text-4xl">
-		The Greatest Sh<span><img src="/ball.svg" class="w-12 h-12" alt="" /></span>w
+		The Greatest Sh<span><img src="/football.png" class="w-8 h-8" alt="" /></span>w
 	</h1>
 	<p class="text-lg md:text-xl lg:text-2xl">1 Event : 3 Spectacular Experiences.</p>
 

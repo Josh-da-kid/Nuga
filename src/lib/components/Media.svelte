@@ -80,78 +80,90 @@
 	}
 </script>
 
-<section class="py-12 sm:py-16 lg:py-24 relative">
-	<div class="text-center mb-12 lg:mb-16 relative">
-		<h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900">
+<section class="py-10 sm:py-12 lg:py-16 xl:py-24 relative">
+	<div class="text-center mb-8 sm:mb-10 lg:mb-12 xl:mb-16 relative px-4">
+		<h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-900">
 			Media Centre
 		</h1>
-		<p class="text-lg sm:text-xl md:text-2xl text-gray-600 mt-2">Read more about us</p>
+		<p class="text-base sm:text-lg md:text-xl xl:text-2xl text-gray-600 mt-2">Read more about us</p>
 		<img
 			src="footballer-2.svg"
-			class="w-32 sm:w-48 md:w-64 lg:w-auto h-auto absolute -right-4 sm:right-0 lg:right-8 top-1/2 -translate-y-1/2 opacity-20 lg:opacity-100 pointer-events-none"
+			class="w-24 sm:w-40 md:w-56 lg:w-auto h-auto absolute -right-2 sm:right-0 lg:right-8 top-1/2 -translate-y-1/2 opacity-20 lg:opacity-100 pointer-events-none"
 			alt="Footballer"
 		/>
 	</div>
 
 	<div
-		class="bg-gradient-to-b to-gray-400 from-blue-950 rounded-t-3xl p-6 sm:p-8 lg:p-12 relative overflow-visible bg-cover bg-center bg-no-repeat"
+		class="bg-gradient-to-b to-gray-400 from-blue-950 rounded-t-2xl sm:rounded-t-3xl p-4 sm:p-6 lg:p-8 xl:p-12 relative overflow-visible bg-cover bg-center bg-no-repeat"
 		style="background-image: url('/mediabg.png');"
 	>
 		<img
 			src="female-athlete.svg"
-			class="absolute bottom-0 left-0 w-64 sm:w-80 lg:w-96 h-auto opacity-30 lg:opacity-50 pointer-events-none"
+			class="absolute bottom-0 left-0 w-48 sm:w-64 md:w-72 lg:w-80 xl:w-96 h-auto opacity-30 lg:opacity-50 pointer-events-none"
 			alt=""
 		/>
 		<div class="relative z-10 grid grid-cols-1 lg:grid-cols-3 gap-8">
 			<!-- Latest Information - Only visible on mobile/tablet, hidden on desktop -->
-			<div class="lg:hidden flex flex-col justify-center">
+			<div class="lg:hidden flex flex-col justify-center px-4">
 				<div class="text-center">
-					<p class="text-white text-lg sm:text-xl font-medium mb-6">Let's bring you up to speed!</p>
+					<p class="text-white text-base sm:text-lg lg:text-xl font-medium mb-4 sm:mb-6">
+						Let's bring you up to speed!
+					</p>
 					<div class="relative inline-block">
-						<h2 class="text-4xl sm:text-5xl font-bold text-white leading-tight">Latest</h2>
+						<h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight">
+							Latest
+						</h2>
 						<img
-							class="w-28 sm:w-36 absolute -bottom-3 left-1/2 -translate-x-1/2 pointer-events-none"
+							class="w-24 sm:w-32 lg:w-36 absolute -bottom-2 sm:-bottom-3 left-1/2 -translate-x-1/2 pointer-events-none"
 							src="/brush.svg"
 							alt=""
 						/>
 					</div>
-					<h2 class="text-4xl sm:text-5xl font-bold text-white leading-tight mt-6">Information</h2>
+					<h2
+						class="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight mt-4 sm:mt-6"
+					>
+						Information
+					</h2>
 				</div>
 			</div>
 
 			<!-- Media Items -->
 			<div class="lg:col-span-2 media-font">
-				<div class="grid grid-cols-1 sm:grid-cols-2 gap-y-36 gap-8 max-w-3xl pb-28">
+				<div
+					class="grid grid-cols-1 sm:grid-cols-2 gap-y-32 sm:gap-y-36 gap-x-8 max-w-3xl pb-28 mx-auto px-4"
+				>
 					{#each mediaItems as item}
 						<div
 							class="bg-white/20 min-h-[320px] p-3 rounded-xl relative max-w-[430px] flex items-end"
 						>
 							<article
-								class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 group w-full -mb-28"
+								class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 group w-full -mb-24 sm:-mb-28"
 							>
-								<div class="relative p-4">
+								<div class="relative p-3 sm:p-4">
 									<img
 										src={item.image}
 										alt={item.title}
-										class="w-full h-48 sm:h-56 border-2 border-gray-200 rounded-xl object-cover group-hover:scale-105 transition-transform duration-500"
+										class="w-full h-44 sm:h-52 lg:h-56 border-2 border-gray-200 rounded-xl object-cover group-hover:scale-105 transition-transform duration-500"
 									/>
 									<span
-										class="absolute top-8 left-6 bg-blue-600/80 text-white text-xs sm:text-sm font-semibold px-3 py-1 rounded-full"
+										class="absolute top-6 sm:top-8 left-4 sm:left-6 bg-blue-600/80 text-white text-xs sm:text-sm font-semibold px-2 sm:px-3 py-1 rounded-full"
 									>
 										{item.tag}
 									</span>
 								</div>
-								<div class="p-4 sm:p-5">
-									<p class="text-gray-500 text-sm">{item.date}</p>
+								<div class="p-3 sm:p-4 lg:p-5">
+									<p class="text-gray-500 text-xs sm:text-sm">{item.date}</p>
 									<h2
-										class="text-base sm:text-lg font-bold text-gray-900 mt-2 line-clamp-2 group-hover:text-blue-600 transition-colors"
+										class="text-sm sm:text-base lg:text-lg font-bold text-gray-900 mt-2 line-clamp-2 group-hover:text-blue-600 transition-colors"
 									>
 										{item.title}
 									</h2>
-									<p class="text-gray-600 mt-2 text-sm line-clamp-3">{item.description}</p>
+									<p class="text-gray-600 mt-2 text-xs sm:text-sm line-clamp-3">
+										{item.description}
+									</p>
 									<a
 										href="#"
-										class="inline-block mt-4 text-blue-600 font-semibold text-sm hover:text-blue-800 transition-colors"
+										class="inline-block mt-3 sm:mt-4 text-blue-600 font-semibold text-xs sm:text-sm hover:text-blue-800 transition-colors"
 									>
 										READ MORE <span
 											class="inline-block ml-1 transition-transform group-hover:translate-x-1"
@@ -166,7 +178,7 @@
 
 				<!-- Pagination below media items -->
 				<div
-					class="flex items-center justify-center md:items-start md:justify-start gap-2 mt-16 pb-8"
+					class="flex items-center justify-center md:items-start md:justify-start gap-2 mt-12 sm:mt-16 pb-8 px-4"
 				>
 					<button
 						onclick={prevPage}
@@ -219,23 +231,23 @@
 			<!-- Latest Information - Only visible on desktop -->
 			<div class="hidden lg:flex lg:col-span-1 flex-col">
 				<div class="text-left">
-					<p class="text-white text-lg sm:text-xl lg:text-xl font-medium mb-6">
+					<p class="text-white text-base lg:text-xl xl:text-2xl font-medium mb-6">
 						Let's bring you up to speed!
 					</p>
 					<div class="relative inline-block">
 						<h2
-							class="text-4xl sm:text-5xl md:text-6xl lg:text-[100px] 2xl:text-[130px] font-bold text-white leading-tight"
+							class="text-4xl sm:text-5xl md:text-6xl lg:text-[80px] xl:text-[100px] 2xl:text-[130px] font-bold text-white leading-tight"
 						>
 							Latest
 						</h2>
 						<img
-							class="w-28 sm:w-36 lg:w-44 absolute -bottom-3 left-1/2 -translate-x-1/2 lg:left-auto lg:right-0 lg:translate-x-2 pointer-events-none"
+							class="w-24 sm:w-32 lg:w-40 xl:w-44 absolute -bottom-2 lg:-bottom-3 left-1/2 -translate-x-1/2 lg:left-auto lg:right-0 lg:translate-x-2 pointer-events-none"
 							src="/brush.svg"
 							alt=""
 						/>
 					</div>
 					<h2
-						class="text-4xl sm:text-5xl md:text-6xl lg:text-[100px] 2xl:text-[130px] font-bold text-white leading-tight mt-6"
+						class="text-4xl sm:text-5xl md:text-6xl lg:text-[80px] xl:text-[100px] 2xl:text-[130px] font-bold text-white leading-tight mt-4 lg:mt-6"
 					>
 						Inform <br />ation
 					</h2>
@@ -243,15 +255,15 @@
 
 				<!-- Explore button -->
 				<div
-					class="items-start justify-start flex mt-5 w-fit bg-gray-200/20 backdrop-blur-md rounded-full px-4 py-2 shadow-lg"
+					class="items-start justify-start flex mt-5 w-fit bg-gray-200/20 backdrop-blur-md rounded-full px-3 lg:px-4 py-2 shadow-lg"
 				>
 					<button
-						class="flex items-center gap-2 bg-gray-200 text-black px-6 lg:px-8 py-2 lg:py-3 rounded-full font-semibold text-base lg:text-lg hover:scale-105 transition-transform shadow-md"
+						class="flex items-center gap-2 bg-gray-200 text-black px-4 lg:px-6 xl:px-8 py-2 lg:py-3 rounded-full font-semibold text-sm lg:text-base xl:text-lg hover:scale-105 transition-transform shadow-md"
 					>
 						Explore All News
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
-							class="h-5 w-5"
+							class="h-4 w-4 lg:h-5 lg:w-5"
 							fill="none"
 							viewBox="0 0 24 24"
 							stroke="currentColor"
@@ -277,10 +289,10 @@
 			</h2>
 		</div>
 
-		<div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:px-12">
+		<div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:px-12 items-stretch">
 			<!-- Left: YouTube Video Frame -->
 			<div class="flex flex-col w-full">
-				<div class="bg-white/30 p-3 rounded-xl h-[400px] sm:h-[450px] lg:h-[500px]">
+				<div class="bg-white/30 p-3 rounded-xl h-full">
 					<article
 						class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 group h-full"
 					>
@@ -335,22 +347,22 @@
 
 			<!-- Right: YouTube Preview Videos -->
 			<div class="flex flex-col w-full max-w-none lg:max-w-xl">
-				<div class="p-3 bg-white/30 rounded-xl h-[400px] sm:h-[450px] lg:h-[500px]">
+				<div class="p-3 bg-white/30 rounded-xl h-full">
 					<div class="grid grid-cols-1 gap-2 bg-white p-3 rounded-xl h-full">
 						{#each videoPreviews as video}
 							<div
-								class="bg-white/30 p-2 sm:p-3 rounded-xl cursor-pointer hover:bg-white/50 transition-colors group"
+								class="bg-white/30 p-2 sm:p-3 rounded-xl cursor-pointer hover:bg-white/50 transition-colors group flex-1"
 							>
 								<article
-									class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1"
+									class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 h-full"
 								>
-									<div class="flex flex-row">
+									<div class="flex flex-row h-full">
 										<!-- Video thumbnail -->
-										<div class="relative overflow-hidden w-28 sm:w-36 lg:w-40 flex-shrink-0">
+										<div class="relative overflow-hidden w-1/3 lg:w-1/4 flex-shrink-0">
 											<img
 												src={video.thumbnail}
 												alt={video.title}
-												class="w-full h-20 sm:h-24 lg:h-28 object-cover group-hover:scale-105 transition-transform duration-500"
+												class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
 											/>
 											<span
 												class="absolute bottom-1 right-1 bg-black/80 text-white text-xs px-1 py-0.5 rounded"
@@ -374,7 +386,7 @@
 											</div>
 										</div>
 										<!-- Text content side by side -->
-										<div class="p-2 sm:p-3 lg:p-4 flex flex-col justify-center">
+										<div class="p-2 sm:p-3 lg:p-4 flex flex-col justify-center flex-1">
 											<p class="text-gray-500 text-xs sm:text-sm">{video.date || '12/Feb/2026'}</p>
 											<h4
 												class="text-xs sm:text-sm lg:text-sm font-bold text-gray-900 line-clamp-2"
@@ -392,28 +404,32 @@
 						{/each}
 					</div>
 				</div>
-				<div class="flex flex-col sm:flex-row gap-3 sm:gap-4 mt-4 items-center justify-center px-2">
-					<!-- youtube button -->
-					<div
-						class="items-center justify-center w-fit bg-gray-200/20 backdrop-blur-md rounded-full px-3 py-2 shadow-lg"
-					>
-						<button
-							class="flex items-center gap-2 bg-yellow-600 text-black px-4 sm:px-6 lg:px-8 py-2 sm:py-3 lg:py-5 rounded-full font-semibold text-sm sm:text-base lg:text-lg hover:scale-105 transition-transform shadow-md"
-						>
-							Check Our Youtube
-						</button>
-					</div>
+			</div>
 
-					<!-- get involved button -->
-					<div
-						class="items-center justify-center w-fit bg-gray-200/20 backdrop-blur-md rounded-full px-3 py-2 shadow-lg"
+			<!-- Buttons - Full width on desktop -->
+			<div
+				class="lg:col-span-2 flex flex-col sm:flex-row gap-3 sm:gap-4 mt-4 items-center justify-center px-2"
+			>
+				<!-- youtube button -->
+				<div
+					class="items-center justify-center w-fit bg-gray-200/20 backdrop-blur-md rounded-full px-3 py-2 shadow-lg"
+				>
+					<button
+						class="flex items-center gap-2 bg-yellow-600 text-black px-4 sm:px-6 lg:px-8 py-2 sm:py-3 lg:py-5 rounded-full font-semibold text-sm sm:text-base lg:text-lg hover:scale-105 transition-transform shadow-md"
 					>
-						<button
-							class="flex items-center gap-2 bg-gradient-to-b from-gray-200 to-green-200 text-black px-4 sm:px-6 lg:px-8 py-2 sm:py-3 lg:py-5 rounded-full font-semibold text-sm sm:text-base lg:text-lg hover:scale-105 transition-transform shadow-md"
-						>
-							Get Involved
-						</button>
-					</div>
+						Check Our Youtube
+					</button>
+				</div>
+
+				<!-- get involved button -->
+				<div
+					class="items-center justify-center w-fit bg-gray-200/20 backdrop-blur-md rounded-full px-3 py-2 shadow-lg"
+				>
+					<button
+						class="flex items-center gap-2 bg-gradient-to-b from-gray-200 to-green-200 text-black px-4 sm:px-6 lg:px-8 py-2 sm:py-3 lg:py-5 rounded-full font-semibold text-sm sm:text-base lg:text-lg hover:scale-105 transition-transform shadow-md"
+					>
+						Get Involved
+					</button>
 				</div>
 			</div>
 		</div>
