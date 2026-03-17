@@ -25,7 +25,7 @@
 		<img src="/varsity.svg" alt="" />
 	</div>
 
-	<section class="grid md:grid-cols-2 mx-auto gap-24 mt-16 justify-between items-center">
+	<section class="grid md:grid-cols-2 mx-auto gap-24 mt-16 justify-between items-start">
 		<div>
 			<div class="text-start">
 				<h2 class="font-bold text-2xl md:text-4xl">Federations</h2>
@@ -49,7 +49,7 @@
 			</div>
 		</div>
 
-		<div>
+		<div class="h-auto">
 			<img src="/col.svg" alt="" />
 		</div>
 	</section>
