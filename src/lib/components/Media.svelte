@@ -101,7 +101,8 @@
 	</div>
 
 	<div
-		class="bg-gradient-to-b to-gray-400 from-blue-950 rounded-t-3xl p-6 sm:p-8 lg:p-12 relative overflow-hidden"
+		class="bg-gradient-to-b to-gray-400 from-blue-950 rounded-t-3xl p-6 sm:p-8 lg:p-12 relative overflow-hidden bg-cover bg-center bg-no-repeat"
+		style="background-image: url('/mediabg.png');"
 	>
 		<img
 			src="female-athlete.svg"

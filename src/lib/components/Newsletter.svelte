@@ -98,16 +98,16 @@
 			Email Address
 			<input
 				type="text"
-				class=" rounded-full px-4 py-3 md:py-4 lg:py-6 text-black text-base w-[330px] lg:w-[500px]"
+				class=" rounded-full px-4 py-3 md:py-4 lg:py-5 text-black text-base w-[330px] lg:w-[500px]"
 				placeholder="Enter your email"
 			/>
 		</label>
 
 		<div
-			class="bg-blue-100/40 mt-5 z-20 backdrop-blur-sm items-center justify-center sm:justify-start mx-auto sm:mx-0 flex flex-col w-fit px-2 py-2 rounded-full"
+			class="bg-blue-100/30 mt-5 z-20 backdrop-blur-sm items-center justify-center sm:justify-start mx-auto sm:mx-0 flex flex-col w-fit px-2 py-2 rounded-full"
 		>
 			<button
-				class="bg-yellow-600 text-black px-8 sm:px-10 md:px-14 py-3 sm:py-4 rounded-full font-bold text-sm sm:text-lg hover:scale-105 transition-transform shadow-lg hover:shadow-xl"
+				class="bg-yellow-500 text-black px-8 sm:px-10 md:px-14 py-3 sm:py-4 rounded-full font-bold text-sm sm:text-lg hover:scale-105 transition-transform shadow-lg hover:shadow-xl"
 			>
 				Donate
 			</button>
