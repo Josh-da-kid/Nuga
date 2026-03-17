@@ -19,11 +19,13 @@
 		<div class="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/80"></div>
 	</div>
 	<!-- Left Athlete (Footballer) - Larger, closer to center, 3D pouring effect -->
-	<div class="absolute left-0 bottom-[-15%] z-20 hidden lg:block">
+	<div
+		class="absolute left-0 lg:-left-16 2xl:left-0 lg:bottom-[-18%] bottom-[-15%] z-20 hidden lg:block"
+	>
 		<img
 			src="/footballer.svg"
 			alt="Footballer"
-			class="h-[550px] md:h-[750px] lg:h-[900px] w-auto object-contain"
+			class="h-[550px] md:h-[750px] 2xl:h-[900px] w-auto object-contain"
 			style="filter: drop-shadow(-20px 0 30px rgba(0,0,0,0.6)); transform: perspective(1000px) rotateY(10deg) translateX(20px);"
 		/>
 	</div>
@@ -124,7 +126,7 @@
 		<img
 			src="/athlete.svg"
 			alt="Athlete"
-			class="h-[520px] md:h-[720px] lg:h-[900px] w-auto object-contain"
+			class="h-[520px] md:h-[720px] lg:h-[750px] 2xl:h-[900px] w-auto object-contain"
 			style="filter: drop-shadow(20px 0 30px rgba(0,0,0,0.6)); transform: perspective(1000px) rotateY(-10deg) translateX(-20px);"
 		/>
 	</div>

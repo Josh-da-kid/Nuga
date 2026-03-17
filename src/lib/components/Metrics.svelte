@@ -1,7 +1,7 @@
 <section
 	class="bg-white py-12 sm:py-16 md:py-24 mt-12 sm:mt-16 md:mt-24 justify-center relative overflow-hidden items-center mx-auto flex flex-col"
 >
-	<div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-12 justify-center items-center flex">
+	<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 justify-center items-center flex">
 		<div class="grid md:grid-cols-1 lg:grid-cols-2 items-center gap-8 md:gap-12">
 			<!-- Right Side - Metrics Content -->
 			<div class="flex flex-col items-start justify-center relative order-1 md:order-1 mx-auto">

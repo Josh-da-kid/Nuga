@@ -226,7 +226,7 @@
 					</p>
 					<div class="relative inline-block">
 						<h2
-							class="text-4xl sm:text-5xl md:text-6xl lg:text-[150px] font-bold text-white leading-tight"
+							class="text-4xl sm:text-5xl md:text-6xl lg:text-[100px] 2xl:text-[150px] font-bold text-white leading-tight"
 						>
 							Latest
 						</h2>
@@ -237,7 +237,7 @@
 						/>
 					</div>
 					<h2
-						class="text-4xl sm:text-5xl md:text-6xl lg:text-[150px] font-bold text-white leading-tight mt-6"
+						class="text-4xl sm:text-5xl md:text-6xl lg:text-[100px] 2xl:text-[150px] font-bold text-white leading-tight mt-6"
 					>
 						Inform <br />ation
 					</h2>

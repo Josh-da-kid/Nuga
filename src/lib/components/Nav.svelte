@@ -4,10 +4,10 @@
 
 <nav class="nav fixed top-4 left-0 right-0 z-50 flex justify-center px-4 gap-8">
 	<div
-		class="nav-container bg-[#081E52]/80 flex items-center justify-between px-4 md:px-8 py-2 md:py-3 rounded-full w-full max-w-6xl backdrop-blur-md shadow-lg"
+		class="nav-container bg-[#081E52]/80 flex items-center justify-between px-4 md:px-8 py-2 lg:py-0 rounded-full w-full max-w-6xl backdrop-blur-md shadow-lg"
 	>
 		<div class="flex-shrink-0">
-			<img src="/paradise-games.svg" class="w-32 md:w-44 h-auto" alt="Paradise Games" />
+			<img src="/paradise-games.svg" class="w-32 md:w-36 lg:w-44 h-auto" alt="Paradise Games" />
 		</div>
 
 		<ul
@@ -101,10 +101,10 @@
 	{/if}
 
 	<div
-		class="items-center justify-center hidden md:flex bg-gray-200/20 backdrop-blur-md rounded-full px-4 py-2 md:px-2 shadow-lg"
+		class="items-center hidden justify-center md:flex shadow-lg bg-gray-100/20 rounded-full px-6"
 	>
 		<button
-			class="hidden md:block bg-[#FFAD33] text-black px-6 lg:px-8 py-2 lg:py-3 rounded-full font-semibold text-base lg:text-lg hover:scale-105 transition-transform shadow-md"
+			class="hidden md:block bg-[#FFAD33] text-black px-6 lg:px-8 py-2 lg:py-1 2xl:py-3 rounded-full font-semibold text-base lg:text-lg hover:scale-105 transition-transform shadow-md"
 		>
 			Get Involved
 		</button>
