@@ -77,13 +77,13 @@
 			class="text-4xl sm:text-5xl md:text-7xl lg:text-[160px] font-black text-center leading-none mb-2"
 		>
 			<span
-				class="bg-gradient-to-r from-[#4ADE80] via-[#22d3ee] to-[#4ADE80] bg-clip-text text-transparent drop-shadow-[0_0_30px_rgba(74,222,128,0.5)]"
+				class="bg-gradient-to-b from-white via-gray-100 to-green-400 bg-clip-text text-transparent drop-shadow-[0_0_30px_rgba(74,222,128,0.5)]"
 			>
 				Paradise
 			</span>
 			<br />
 			<span
-				class="bg-gradient-to-r from-[#4ADE80] via-[#22d3ee] to-[#4ADE80] bg-clip-text text-transparent drop-shadow-[0_0_30px_rgba(74,222,128,0.5)]"
+				class="bg-gradient-to-r from-white via-gray-100 to-green-400 bg-clip-text text-transparent drop-shadow-[0_0_30px_rgba(74,222,128,0.5)]"
 			>
 				Games
 			</span>
