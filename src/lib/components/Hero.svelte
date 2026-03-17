@@ -16,7 +16,7 @@
 		class="absolute inset-0 z-0 overflow-hidden rounded-b-2xl md:rounded-b-[4rem] lg:rounded-b-[9rem]"
 	>
 		<img src="/herobg.png" alt="Stadium Background" class="w-full h-full object-cover" />
-		<div class="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/80"></div>
+		<div class="absolute inset-0 bg-gradient-to-b from-black/10 via-black/20 to-black/30"></div>
 	</div>
 	<!-- Left Athlete (Footballer) - Larger, closer to center, 3D pouring effect -->
 	<div
@@ -105,7 +105,7 @@
 
 		<!-- Description -->
 		<p
-			class="text-gray-300 text-sm sm:text-base md:text-xl lg:text-2xl text-center max-w-[90%] sm:max-w-lg md:max-w-2xl leading-relaxed mb-6 sm:mb-8 md:mb-10"
+			class="text-white text-sm sm:text-base md:text-xl font-medium lg:text-2xl text-center max-w-[90%] sm:max-w-lg md:max-w-3xl leading-relaxed mb-6 sm:mb-8 md:mb-10"
 		>
 			The 28th Edition of the Nigerian University Games is coming to Calabar. Over 100 universities.
 			Thousands of athletes. One unforgettable celebration of sport, culture, and media excellence.
