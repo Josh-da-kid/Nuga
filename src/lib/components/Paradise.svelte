@@ -13,7 +13,7 @@
 >
 	<!-- Stadium Background Image -->
 	<div class="absolute inset-0 z-0 overflow-hidden rounded-2xl">
-		<img src={stadiumImage} alt="Stadium Background" class="w-full h-full object-cover" />
+		<img src="/paradise.png" alt="Stadium Background" class="w-full h-full object-cover" />
 		<div class="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/80"></div>
 	</div>
 
@@ -25,7 +25,7 @@
 				AFRICA'S WARMEST WELCOME
 			</h4>
 			<h1
-				class="text-white default-font text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-extrabold leading-tight"
+				class="text-white default-font text-3xl sm:text-4xl md:text-5xl lg:text-[110px] 2xl:text-[130px] font-extrabold leading-tight"
 			>
 				The <br /><span
 					>ParAdisE <img

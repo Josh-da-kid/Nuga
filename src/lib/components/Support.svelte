@@ -50,7 +50,7 @@
 					</div>
 				</div>
 				<div class="flex flex-col justify-center mt-4">
-					<h3 class="font-bold text-lg md:text-xl lg:text-2xl text-gray-900 text-center">
+					<h3 class="font-bold text-lg md:text-xl text-gray-900 text-center">
 						{card.title2}
 					</h3>
 					<p class="text-gray-600 mt-2 text-sm md:text-lg lg:text-xl text-center">

@@ -15,7 +15,7 @@
 	<div
 		class="absolute inset-0 z-0 overflow-hidden rounded-b-2xl md:rounded-b-[4rem] lg:rounded-b-[9rem]"
 	>
-		<img src={stadiumImage} alt="Stadium Background" class="w-full h-full object-cover" />
+		<img src="/herobg.png" alt="Stadium Background" class="w-full h-full object-cover" />
 		<div class="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/80"></div>
 	</div>
 	<!-- Left Athlete (Footballer) - Larger, closer to center, 3D pouring effect -->
