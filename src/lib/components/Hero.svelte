@@ -96,7 +96,7 @@
 				UNICAL <span
 					><img
 						src="/brush.svg"
-						class="-mt-1 sm:-mt-3 h-3 md:h-5 lg:h-8 w-auto text-center items-center justify-center flex mx-auto"
+						class="-mt-1 sm:-mt-2 h-3 md:h-5 lg:h-8 w-16 sm:w-auto text-center items-center justify-center flex mx-auto"
 						alt="Brush"
 					/></span
 				></span

@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { onMount } from 'svelte';
+
 	interface CarouselImage {
 		id: number;
 		src: string;
@@ -60,6 +62,24 @@
 	let hoveredIndex = $state<number | null>(null);
 	let cursorPositions = $state<number[][]>(images.map(() => [0.5, 0.5]));
 
+	let currentIndex = $state(0);
+	let isSmallScreen = $state(false);
+	let touchStartX = $state(0);
+	let touchEndX = $state(0);
+	let containerRef: HTMLDivElement;
+
+	function checkScreenSize() {
+		if (typeof window !== 'undefined') {
+			isSmallScreen = window.innerWidth < 640;
+		}
+	}
+
+	onMount(() => {
+		checkScreenSize();
+		window.addEventListener('resize', checkScreenSize);
+		return () => window.removeEventListener('resize', checkScreenSize);
+	});
+
 	function handleMouseEnter(index: number) {
 		hoveredIndex = index;
 	}
@@ -119,31 +139,133 @@
 			z-index: ${zIndex};
 		`;
 	}
+
+	function nextSlide() {
+		currentIndex = (currentIndex + 1) % images.length;
+	}
+
+	function prevSlide() {
+		currentIndex = (currentIndex - 1 + images.length) % images.length;
+	}
+
+	function goToSlide(index: number) {
+		currentIndex = index;
+	}
+
+	function handleTouchStart(e: TouchEvent) {
+		touchStartX = e.touches[0].clientX;
+	}
+
+	function handleTouchMove(e: TouchEvent) {
+		touchEndX = e.touches[0].clientX;
+	}
+
+	function handleTouchEnd() {
+		const diff = touchStartX - touchEndX;
+		if (Math.abs(diff) > 50) {
+			if (diff > 0) {
+				nextSlide();
+			} else {
+				prevSlide();
+			}
+		}
+		touchStartX = 0;
+		touchEndX = 0;
+	}
 </script>
 
-<section class="w-full flex items-center justify-center overflow-hidden {background}">
-	<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
-		<div class="relative flex items-center justify-center {gap} py-8 perspective-container">
-			{#each images as image, index}
+{#if isSmallScreen}
+	<section class="w-full flex items-center justify-center overflow-hidden {background} py-6">
+		<div class="w-full max-w-sm mx-auto px-4">
+			<div
+				class="relative overflow-hidden rounded-2xl"
+				bind:this={containerRef}
+				ontouchstart={handleTouchStart}
+				ontouchmove={handleTouchMove}
+				ontouchend={handleTouchEnd}
+				role="region"
+				aria-label="Image carousel"
+			>
 				<div
-					class="carousel-card {cardWidth} {cardHeight} {smCardWidth} {smCardHeight} {mdCardWidth} {mdCardHeight} {lgCardWidth} {lgCardHeight}"
-					style={getCardStyle(index)}
-					onmouseenter={() => handleMouseEnter(index)}
-					onmouseleave={handleMouseLeave}
-					onmousemove={(e) => handleMouseMove(index, e)}
-					role="group"
-					aria-label="Gallery image"
+					class="flex transition-transform duration-500 ease-out"
+					style="transform: translateX(-{currentIndex * 100}%)"
 				>
-					<div class="card-inner">
-						<div class="card-image-container">
-							<img src={image.src} alt={image.alt || ''} class="card-image" draggable="false" />
+					{#each images as image}
+						<div class="w-full flex-shrink-0 aspect-[3/4]">
+							<img
+								src={image.src}
+								alt={image.alt || ''}
+								class="w-full h-full object-cover"
+								draggable="false"
+							/>
+						</div>
+					{/each}
+				</div>
+
+				<button class="nav-btn nav-prev" onclick={prevSlide} aria-label="Previous slide">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 0 24 24"
+						stroke-width="2"
+						stroke="currentColor"
+						class="w-5 h-5"
+					>
+						<path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+					</svg>
+				</button>
+				<button class="nav-btn nav-next" onclick={nextSlide} aria-label="Next slide">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 0 24 24"
+						stroke-width="2"
+						stroke="currentColor"
+						class="w-5 h-5"
+					>
+						<path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+					</svg>
+				</button>
+			</div>
+
+			<div class="flex justify-center gap-2 mt-4">
+				{#each images as _, i}
+					<button
+						class="dot-indicator {i === currentIndex ? 'active' : ''}"
+						onclick={() => goToSlide(i)}
+						aria-label="Go to slide {i + 1}"
+					></button>
+				{/each}
+			</div>
+
+			<p class="text-center text-xs text-gray-400 mt-3">Swipe or use arrows to navigate</p>
+		</div>
+	</section>
+{:else}
+	<section class="w-full flex items-center justify-center overflow-hidden {background}">
+		<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
+			<div class="relative flex items-center justify-center {gap} py-8 perspective-container">
+				{#each images as image, index}
+					<div
+						class="carousel-card {cardWidth} {cardHeight} {smCardWidth} {smCardHeight} {mdCardWidth} {mdCardHeight} {lgCardWidth} {lgCardHeight}"
+						style={getCardStyle(index)}
+						onmouseenter={() => handleMouseEnter(index)}
+						onmouseleave={handleMouseLeave}
+						onmousemove={(e) => handleMouseMove(index, e)}
+						role="group"
+						aria-label="Gallery image"
+					>
+						<div class="card-inner">
+							<div class="card-image-container">
+								<img src={image.src} alt={image.alt || ''} class="card-image" draggable="false" />
+							</div>
 						</div>
 					</div>
-				</div>
-			{/each}
+				{/each}
+			</div>
 		</div>
-	</div>
-</section>
+	</section>
+{/if}
 
 <style>
 	.perspective-container {
@@ -196,5 +318,59 @@
 
 	.carousel-card:hover .card-image {
 		transform: scale(1.05);
+	}
+
+	.nav-btn {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+		background: rgba(255, 255, 255, 0.9);
+		backdrop-filter: blur(8px);
+		border: 1px solid rgba(0, 0, 0, 0.1);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		cursor: pointer;
+		transition: all 0.3s ease;
+		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+		z-index: 10;
+	}
+
+	.nav-btn:hover {
+		background: rgba(255, 255, 255, 1);
+		transform: translateY(-50%) scale(1.1);
+		box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+	}
+
+	.nav-prev {
+		left: 12px;
+	}
+
+	.nav-next {
+		right: 12px;
+	}
+
+	.dot-indicator {
+		width: 8px;
+		height: 8px;
+		border-radius: 50%;
+		background: rgba(0, 0, 0, 0.2);
+		border: none;
+		cursor: pointer;
+		transition: all 0.3s ease;
+		padding: 0;
+	}
+
+	.dot-indicator:hover {
+		background: rgba(0, 0, 0, 0.4);
+	}
+
+	.dot-indicator.active {
+		background: #3b82f6;
+		width: 24px;
+		border-radius: 4px;
 	}
 </style>

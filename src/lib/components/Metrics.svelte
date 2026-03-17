@@ -25,7 +25,12 @@
 					<span>NUGA</span>
 					<span class="ml-3 lg:ml-0">METR</span>
 					<span class="flex flex-col"
-						>ICS <span><img src="/brush.svg" class="lg:-mt-8 h-3 md:h-5 lg:h-8" alt="" /></span
+						>ICS <span
+							><img
+								src="/brush.svg"
+								class="lg:-mt-6 w-16 sm:w-40 mx-auto items-center flex justify-center h-3 md:h-5 lg:h-8"
+								alt=""
+							/></span
 						></span
 					>
 				</h2>
