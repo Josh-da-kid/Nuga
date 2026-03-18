@@ -8,11 +8,9 @@
 	};
 </script>
 
-<section
-	class="relative w-full h-full flex justify-center items-center rounded-2xl overflow-visible"
->
+<section class="relative w-full h-full flex justify-center items-center overflow-visible">
 	<!-- Stadium Background Image -->
-	<div class="absolute inset-0 z-0 overflow-hidden rounded-2xl">
+	<div class="absolute inset-0 z-0 overflow-hidden">
 		<img src="/paradise.png" alt="Stadium Background" class="w-full h-full object-cover" />
 		<div class="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/80"></div>
 	</div>
