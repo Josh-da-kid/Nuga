@@ -55,41 +55,41 @@
 
 	{#if mobileMenuOpen}
 		<div
-			class="md:hidden fixed top-24 left-4 right-4 bg-[#081E52]/95 backdrop-blur-md rounded-2xl p-6 shadow-2xl z-40"
+			class="md:hidden fixed top-24 left-4 right-4 bg-[#081E52]/95 mt-4 text-white backdrop-blur-md rounded-2xl p-6 shadow-2xl z-40"
 		>
 			<ul class="flex flex-col gap-4 text-lg text-center">
 				<li>
 					<a
 						href="/"
-						class="block py-2 hover:text-[#4ADE80]"
+						class="block py-2 hover:text-blue-500"
 						onclick={() => (mobileMenuOpen = false)}>Home</a
 					>
 				</li>
 				<li>
 					<a
 						href="/about"
-						class="block py-2 hover:text-[#4ADE80]"
+						class="block py-2 hover:text-blue-500"
 						onclick={() => (mobileMenuOpen = false)}>About</a
 					>
 				</li>
 				<li>
 					<a
 						href="/ezibiz"
-						class="block py-2 hover:text-[#4ADE80]"
+						class="block py-2 hover:text-blue-500"
 						onclick={() => (mobileMenuOpen = false)}>Ezibiz</a
 					>
 				</li>
 				<li>
 					<a
 						href="/media"
-						class="block py-2 hover:text-[#4ADE80]"
+						class="block py-2 hover:text-blue-500"
 						onclick={() => (mobileMenuOpen = false)}>Media</a
 					>
 				</li>
 				<li>
 					<a
 						href="/nuga"
-						class="block py-2 hover:text-[#4ADE80]"
+						class="block py-2 hover:text-blue-500"
 						onclick={() => (mobileMenuOpen = false)}>NUGA</a
 					>
 				</li>
