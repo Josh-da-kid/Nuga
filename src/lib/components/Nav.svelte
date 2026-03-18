@@ -11,7 +11,7 @@
 		</div>
 
 		<ul
-			class="hidden md:flex gap-6 lg:gap-8 text-lg justify-center items-center text-white mx-auto"
+			class="hidden md:flex gap-6 lg:gap-8 text-lg justify-center items-center text-white mx-auto flex-shrink"
 		>
 			<li><a href="/" class="hover:text-blue-400 hover:underline transition-colors">Home</a></li>
 			<li>
