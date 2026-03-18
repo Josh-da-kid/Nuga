@@ -289,10 +289,10 @@
 			</h2>
 		</div>
 
-		<div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:px-12 items-stretch">
+		<div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:px-12">
 			<!-- Left: YouTube Video Frame -->
 			<div class="flex flex-col w-full">
-				<div class="bg-white/30 p-3 rounded-xl h-full">
+				<div class="bg-white/30 p-3 rounded-xl">
 					<article
 						class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 group h-full"
 					>

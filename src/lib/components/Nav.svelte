@@ -104,7 +104,7 @@
 		class="items-center hidden justify-center md:flex shadow-lg bg-gray-100/20 rounded-full px-6"
 	>
 		<button
-			class="hidden md:block bg-[#FFAD33] text-black px-6 lg:px-8 py-2 lg:py-1 2xl:py-3 rounded-full font-semibold text-base lg:text-lg hover:scale-105 transition-transform shadow-md"
+			class="hidden md:block bg-[#FFAD33] text-black px-6 lg:px-8 py-2 lg:py-3 2xl:py-3 rounded-full font-semibold text-base hover:scale-105 transition-transform shadow-md"
 		>
 			Get Involved
 		</button>

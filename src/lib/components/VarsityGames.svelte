@@ -36,20 +36,20 @@
 				</p>
 			</div>
 
-			<div class="flex flex-col gap-8 mt-12">
+			<div class="flex flex-col gap-4">
 				{#each federations as federation}
 					<div
 						class="border-2 border-sky-500 rounded-xl p-6 gap-8 max-w-xl flex flex-col sm:flex-row items-center shadow-md"
 					>
 						<img src={federation.image} alt={federation.title} class="w-32 h-auto mb-4" />
 
-						<li class="font-semibold text-lg">{federation.title}</li>
+						<li class="font-semibold text-lg px-2">{federation.title}</li>
 					</div>
 				{/each}
 			</div>
 		</div>
 
-		<div class="h-full -mt-12">
+		<div class="h-full -mt-6">
 			<img src="/col.svg" alt="" class="h-full w-full object-cover" />
 		</div>
 	</section>
