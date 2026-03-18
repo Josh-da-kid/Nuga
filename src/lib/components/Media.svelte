@@ -289,10 +289,10 @@
 			</h2>
 		</div>
 
-		<div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:px-12">
+		<div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:px-12 items-stretch">
 			<!-- Left: YouTube Video Frame -->
-			<div class="flex flex-col w-full">
-				<div class="bg-white/30 p-3 rounded-xl">
+			<div class="flex flex-col w-full h-full">
+				<div class="bg-white/30 p-3 rounded-xl h-full">
 					<article
 						class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 group h-full"
 					>
@@ -346,12 +346,12 @@
 			</div>
 
 			<!-- Right: YouTube Preview Videos -->
-			<div class="flex flex-col w-full max-w-none lg:max-w-xl">
+			<div class="flex flex-col w-full h-full">
 				<div class="p-3 bg-white/30 rounded-xl h-full">
-					<div class="grid grid-cols-1 gap-2 bg-white p-3 rounded-xl h-full">
+					<div class="grid grid-cols-1 gap-1 bg-white p-3 rounded-xl h-full">
 						{#each videoPreviews as video}
 							<div
-								class="bg-white/30 p-2 sm:p-3 rounded-xl cursor-pointer hover:bg-white/50 transition-colors group flex-1"
+								class="bg-white/30 p-2 sm:p-3 rounded-xl cursor-pointer hover:bg-white/50 transition-colors group h-full"
 							>
 								<article
 									class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 h-full"
